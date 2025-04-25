@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uniform Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">NatureGrid</div>
+        <div class="menu-toggle" onclick="document.querySelector('.nav-links').classList.toggle('active')">☰</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Videos</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Main Content -->
+    <div class="container">
+        <header class="header">
+            <h1>Nature Media Gallery</h1>
+            <p>Beautiful nature images and documentaries in perfect frames</p>
+        </header>
+        
+        <section class="gallery-section">
+            <h2>Nature Photography</h2>
+            <div class="image-gallery">
+                <div class="gallery-item">
+                    <div class="image-frame">
+                        <img src="media/image1.jpg" alt="Mountain Landscape" class="uniform-image">
+                    </div>
+                    <p>Mountain Landscape </p>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-frame">
+                        <img src="media/image2.jpg" alt="Forest Pathway" class="uniform-image">
+                    </div>
+                    <p>Forest Pathway </p>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-frame">
+                        <img src="media/image3.jpg" alt="Ocean Sunset" class="uniform-image">
+                    </div>
+                    <p>Ocean Sunset </p>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-frame">
+                        <img src="media/image4.jpg" alt="Wildlife Closeup" class="uniform-image">
+                    </div>
+                    <p>Wildlife Closeup </p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="video-section">
+            <h2>Nature Documentaries</h2>
+            <div class="video-container">
+                <div class="video-item">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/7Pq-S557XQU" 
+                                title="BBC Earth: The Hunt" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                    </div>
+                    <p>BBC Earth: The Hunt</p>
+                </div>
+                <div class="video-item">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/GfO-3Oir-qM" 
+                                title="National Geographic: Our Planet" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                    </div>
+                    <p>Our Planet: Coastal Seas</p>
+                </div>
+            </div>
+        </section>
+        
+        <footer class="footer">
+            <p>&copy; 2025 joakim </p>
+        </footer>
+    </div>
+</body>
+</html>
